@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="light-mode">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artigos | Erick de Lima Souza</title>
+  <meta name="description" content="Artigos técnicos de Erick de Lima Souza na plataforma Dio.me."/>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo">Erick.dev</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#artigos">Artigos</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Meus Artigos</h1>
+        <p class="hero-subtitle">Conteúdos publicados na Dio.me sobre tecnologia, inovação e propósito.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artigos Section -->
+  <section id="artigos" class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">Artigos na Dio.me</h2>
+      <div class="projects-grid" id="articles-container">
+        <!-- Artigos renderizados via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Erick de Lima Souza. Desenvolvido com 💚 e muito ☕ - By. Greem Monster Project!</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    lucide.createIcons();
+
+    const artigos = [
+  {
+    titulo: "Do Suporte Técnico ao Universo Dev: minha virada de chave com propósito",
+    resumo: "Compartilho minha trajetória de mais de 13 anos em TI e como dei um passo ousado rumo ao desenvolvimento. Uma história real sobre reinvenção profissional, propósito e tecnologia com impacto social.",
+    autor: "Erick de Lima Souza",
+    data: "09/05/2025 12:14",
+    link: "https://www.dio.me/articles/do-suporte-tecnico-ao-universo-dev-minha-virada-de-chave-com-proposito-b5ad74aa8290"
+  },
+  {
+    titulo: "Tecnologia e empatia: a nossa parte no combate ao bullying escolar",
+    resumo: "Um chamado para refletir como a tecnologia pode ser aliada da empatia. Neste artigo, falo sobre o papel das ferramentas digitais na conscientização e enfrentamento ao bullying escolar.",
+    autor: "Erick de Lima Souza",
+    data: "07/04/2025 17:54",
+    link: "https://www.dio.me/articles/tecnologia-e-empatia-a-nossa-parte-no-combate-ao-bullying-escolar-7136b33a2acd"
+  },
+        {
+        titulo: "Bend: A linguagem brasileira que pensa diferente",
+        resumo: "Conheça a linguagem criada por Victor Taelin que desafia a lógica tradicional da programação.",
+        autor: "Erick de Lima Souza",
+        data: "19/02/2025 11:15",
+        link: "https://www.dio.me/articles/bend-a-revolucao-br-na-programacao-paralela-rapida-poderosa-e-feita-para-o-futuro"
+      },
+  {
+    titulo: "OpenAI: Muito Além do ChatGPT",
+    resumo: "Um mergulho no ecossistema da OpenAI, passando por ChatGPT, Whisper, DALL·E, Codex e Sora.",
+    autor: "Erick de Lima Souza",
+    data: "16/02/2025 22:23",
+    link: "https://www.dio.me/articles/openai-muito-alem-do-chatgpt"
+  },
+  {
+    titulo: "SQL, Inteligência Artificial e Kakashi-sensei: minha jornada com a IA Gemini",
+    resumo: "Unindo anime, banco de dados e inteligência artificial, conto como a IA Gemini da Google me ajudou a resolver desafios com SQL e o que aprendi nesse processo. Sim, tem analogia com o Kakashi!",
+    autor: "Erick de Lima Souza",
+    data: "15/02/2025 21:34",
+    link: "https://www.dio.me/articles/sql-inteligencia-artificial-e-kakashi-sensei-minha-jornada-com-a-ia-gemini"
+  },
+  {
+    titulo: "DeepSeek V3: a Inteligência Artificial que vai revolucionar sua vida",
+    resumo: "Apresento o DeepSeek V3, um modelo de IA poderoso, open source e multilinguagem. Veja como ele está ganhando destaque e pode transformar o modo como lidamos com dados e códigos.",
+    autor: "Erick de Lima Souza",
+    data: "28/01/2025 10:11",
+    link: "https://www.dio.me/articles/deepseek-v3-a-inteligencia-artificial-que-vai-revolucionar-sua-vida"
+  },
+  {
+    titulo: "A ilusão da fortuna: como os sites bets manipulam os jogadores",
+    resumo: "Uma análise crítica sobre os bastidores dos sites de apostas, os gatilhos usados para manipular os usuários e os impactos emocionais e sociais causados por essa indústria bilionária.",
+    autor: "Erick de Lima Souza",
+    data: "12/01/2025 12:36",
+    link: "https://www.dio.me/articles/a-ilusao-da-fortuna-como-os-sites-bets-manipulam-os-jogadores"
+  },
+  {
+    titulo: "O impacto do GitHub no ecossistema de desenvolvimento",
+    resumo: "O GitHub é mais que um repositório: é um ecossistema que mudou como desenvolvedores trabalham, colaboram e crescem. Neste artigo, analiso seus efeitos na carreira e no código aberto.",
+    autor: "Erick de Lima Souza",
+    data: "29/12/2024 17:10",
+    link: "https://www.dio.me/articles/o-impacto-do-github-no-ecossistema-de-desenvolvimento-uma-analise-estrategica-e-tecnologica"
+  },
+  {
+    titulo: "O impacto das IAs generativas na programação",
+    resumo: "Exploro como ferramentas como ChatGPT e Gemini estão mudando a forma de programar. Será o fim do código tradicional ou o início de um novo jeito de construir soluções?",
+    autor: "Erick de Lima Souza",
+    data: "29/12/2024 15:23",
+    link: "https://www.dio.me/articles/o-impacto-das-ias-generativas-na-programacao-transformando-o-desenvolvimento-de-software"
+  }
+
+    ];
+
+function renderArtigos() {
+  const container = document.getElementById('articles-container');
+  artigos.forEach((artigo, index) => {
+    const card = document.createElement('div');
+    card.className = 'project-card fade-in';
+    card.style.animationDelay = `${index * 0.1}s`;
+    card.innerHTML = `
+      <div class="project-content">
+        <h3 class="project-title">${artigo.titulo}</h3>
+        <p class="project-description">${artigo.resumo}</p>
+        <p class="project-description"><strong>Autor:</strong> ${artigo.autor}</p> 
+        <p class="project-description"><strong>Publicado em:</strong> ${artigo.data}</p>
+        <div class="project-links">
+          <a href="${artigo.link}" target="_blank" class="project-link secondary">
+            <i data-lucide="external-link"></i> Ler artigo completo
+          </a>
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
+    document.addEventListener('DOMContentLoaded', () => {
+        renderArtigos();
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    });
+    
+    // Theme toggle functionality
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+        document.documentElement.classList.toggle('light-mode');
+        document.documentElement.classList.toggle('dark-mode');
+        const isLightMode = document.documentElement.classList.contains('light-mode');
+        document.getElementById('theme-toggle').textContent = isLightMode ? '🌙' : '☀️';
+        });
+    </script>
+</body>
+</html>
