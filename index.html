@@ -1,0 +1,250 @@
+<!--
+pasta-do-portfolio/  
+│── index.html          # Estrutura principal  
+│── styles/  
+│   └── main.css        # Estilos globais  
+│── scripts/  
+│   └── main.js         # Lógica do portfólio  
+│── assets/  
+│   ├── images/         # Armazena imagens (erick.png, projetos, etc.)  
+│   └── icons/          # Ícones (opcional)  
+-->
+
+<!--
+pasta-do-portfolio/  
+│── index.html          # Estrutura principal  
+│── styles/  
+│   └── main.css        # Estilos globais  
+│── scripts/  
+│   └── main.js         # Lógica do portfólio  
+│── assets/  
+│   ├── images/         # Armazena imagens (erick.png, projetos, etc.)  
+│   └── icons/          # Ícones (opcional)  
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="light-mode">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Erick de Lima Souza - Desenvolvedor</title>
+  <meta name="description" content="Desenvolvedor apaixonado por tecnologia, IA e computação em nuvem. Especialista em JavaScript, React e DevOps.">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo">Erick.dev</div>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiByeD0iNzUiIGZpbGw9IiMxMGI5ODEiLz4KPHRleHQgeD0iNzUiIHk9Ijg1IiBmb250LWZhbWlseT0iSW50ZXIiIGZvbnQtc2l6ZT0iNjAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5FUzwvdGV4dD4KPC9zdmc+" alt="Erick de Lima Souza" class="profile-img">
+        <h1>Erick de Lima Souza</h1>
+        <p class="hero-subtitle">Desenvolvedor Full Stack • Especialista em DevOps • Entusiasta de IA</p>
+        <div class="social-links">
+          <a href="mailto:erick.devzone@gmail.com" class="social-link">
+            <i data-lucide="mail"></i>
+          </a>
+          <a href="https://github.com/Erick-Lim-Souza" target="_blank" class="social-link">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/erick-souza-70404686/" target="_blank" class="social-link">
+            <i data-lucide="linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="about-grid">
+        <div>
+          <img src="assets/imagens/erick.jpg" alt="Foto de Erick" class="about-img">
+        </div>
+<div class="about-text">
+  <p>
+    Sou um desenvolvedor apaixonado por tecnologia, com foco em criar soluções inovadoras, eficientes e com impacto real. 
+    Tenho formação em <strong>DevOps</strong> e experiência crescente como desenvolvedor full stack, unindo práticas modernas de desenvolvimento, automação e cloud computing.
+  </p>
+  <p>
+    Atualmente atuo como <strong>Analista de Dados</strong> na <strong>Wiki Sistemas</strong>, aplicando conhecimentos em análise de dados, ERP e desenvolvimento para otimizar processos e gerar insights estratégicos para o negócio.
+  </p>
+  <p>
+    Também sou idealizador do <strong>Green Monster Project</strong>, uma iniciativa que une tecnologia e responsabilidade social para criar soluções acessíveis e inteligentes, como o app <em>FinanIA</em>, voltado à educação financeira e inclusão digital.
+  </p>
+  <p>
+    Estou sempre em busca de novos desafios que me permitam evoluir profissionalmente e contribuir para projetos com propósito, usando a tecnologia como ponte para transformar vidas.
+  </p>
+</div>
+        <div class="about-stats">
+          <div class="stat-item fade-in">
+            <h3>Idade</h3>
+            <p>32 anos</p>
+          </div>
+          <div class="stat-item fade-in">
+            <h3>Localização</h3>
+            <p>Goiânia - GO, Brasil</p>
+          </div>
+          <div class="stat-item fade-in">
+            <h3>Hobbies</h3>
+            <p>Programação, IA, DevOps, Cloud Computing, Desenvolvimento de Software, Automação, Análise de Dados</p>
+          </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="formacao" class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">Formação Acadêmica</h2>
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <h3>Ciência da Computação</h3>
+          <div class="company">Gran Centro Universitário</div>
+          <div class="period">Em andamento</div>
+          <p>Aprofundando conhecimentos em algoritmos, estruturas de dados, engenharia de software e inteligência artificial.</p>
+        </div>
+        <div class="timeline-item fade-in">
+          <h3>CST DevOps</h3>
+          <div class="company">Centro Universitário Anhanguera Pitágoras Ampli</div>
+          <div class="period">Concluído</div>
+          <p>Formação especializada em práticas DevOps, automação, containerização e cloud computing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experiencia" class="section">
+    <div class="container">
+      <h2 class="section-title">Experiência Profissional</h2>
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <h3>Supervisor de Analise em suporte</h3>
+          <div class="company">Wiki Sistemas</div>
+          <div class="period">2024 - Atualmente</div>
+          <p>Gerenciamento de equipe de suporte técnico, implementação de melhorias em processos e foco na experiência do cliente.</p>
+          <br>
+          <p>Analise de dados para otimização de sistemas, resolução de problemas e desenvolvimento de soluções personalizadas.</p>
+          <br>
+          <p>Desenvolvimento de pessoas e processos, com foco em automação e eficiência operacional.</p>
+          <br>
+          <p>Integração de plataformas de marketplace e e-commerce, garantindo a melhor experiência para os cliente.</p>
+          <br>
+          <p>Treinamento e capacitação da equipe de suporte, promovendo um ambiente colaborativo e de aprendizado contínuo.</p>
+        </div>
+        <div class="timeline-item fade-in">
+          <h3>Analista de Suporte Técnico N3</h3>
+          <div class="company">Wiki Sistemas</div>
+          <div class="period">2020 - 2024</div>
+          <p>Resolução de problemas complexos, automação de processos e desenvolvimento de scripts para otimização de sistemas.</p>
+        </div>
+        <div class="timeline-item fade-in">
+          <h3>Assistente de Informática</h3>
+          <div class="company">Atacadão Ltda</div>
+          <div class="period">2018 - 2020</div>
+          <p>Central de procesamento de dados, responsalve por BD Redhat, Azure e servidores de nfe.</p>
+          <br>
+          <p>PDV e suporte técnico, garantindo o funcionamento adequado dos sistemas de ponto de venda.</p>
+          <br
+          <p>Suporte técnico a usuários, manutenção de hardware e software, e treinamento de equipe em novas tecnologias.</p>
+          <br>
+          <p>Implementação de soluções de TI para melhorar a eficiência operacional e a segurança dos dados.</p>
+          <br>
+          <p>Colaboração com equipes multifuncionais para garantir a integração de sistemas e a continuidade dos negócios.</p>
+          <br>
+          <p>Desenvolvimento de Shell scripts para automação de tarefas repetitivas, melhorando a produtividade da equipe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">Minhas Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category fade-in">
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category fade-in">
+          <h3>Backend & DevOps</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Git/GitHub</span>
+          </div>
+        </div>
+        <div class="skill-category fade-in">
+          <h3>Cloud & IA</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">AI/ML</span>
+            <span class="skill-tag">Data Analysis</span>
+          </div>
+        </div>
+  <div class="skill-category fade-in">
+    <h3>Sistemas Operacionais</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">Windows</span>
+      <span class="skill-tag">Linux</span>
+    </div>
+  </div>
+</section>
+  <!-- Projects Section -->
+  <section id="projetos" class="section">
+    <div class="container">
+      <h2 class="section-title">Projetos em Destaque</h2>
+      <div class="projects-grid" id="projects-container">
+        <!-- Projects will be loaded here -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Erick de Lima Souza. Desenvolvido com 💚 e muito ☕ - By. Greem Monster Project!</p>
+
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+    
+  </script>
+</body>
+</html>
+
+
+
