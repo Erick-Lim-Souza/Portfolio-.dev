@@ -60,6 +60,46 @@
       themeToggle.textContent = isDark ? '☀️' : '🌙';
     });
 
+
+    const artigos = [
+  {
+    titulo: "OpenAI: Muito Além do ChatGPT",
+    resumo: "Um mergulho no ecossistema da OpenAI, passando por ChatGPT, Whisper, DALL·E, Codex e Sora.",
+    link: "https://www.dio.me/articles/openai-muito-alem-do-chatgpt"
+  },
+  {
+    titulo: "Bend: A linguagem brasileira que pensa diferente",
+    resumo: "Conheça a linguagem criada por Victor Taelin que desafia a lógica tradicional da programação.",
+    link: "https://www.dio.me/articles/bend-a-linguagem-brasileira-que-pensa-diferente"
+  }
+];
+
+function renderArtigos() {
+  const container = document.getElementById('articles-container');
+  artigos.forEach((artigo, index) => {
+    const card = document.createElement('div');
+    card.className = 'project-card fade-in';
+    card.style.animationDelay = `${index * 0.1}s`;
+    card.innerHTML = `
+      <div class="project-content">
+        <h3 class="project-title">${artigo.titulo}</h3>
+        <p class="project-description">${artigo.resumo}</p>
+        <p class="project-description"><strong>Autor:</strong> ${artigo.autor}</p>
+        <p class="project-description"><strong>Data:</strong> ${artigo.data}</p>
+        <div class="project-links">
+          <a href="${artigo.link}" target="_blank" class="project-link secondary">
+            <i data-lucide="external-link"></i> Ler artigo completo
+          </a>
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+
+
+
     // Render projects
     function renderProjects() {
       const container = document.getElementById('projects-container');
@@ -127,6 +167,7 @@
       
       // Render projects
       renderProjects();
+      renderArtigos();
       
       // Initialize Lucide icons
       if (typeof lucide !== 'undefined') {
