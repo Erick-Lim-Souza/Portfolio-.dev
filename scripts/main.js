@@ -89,7 +89,7 @@ function renderArtigos() {
         <h3 class="project-title">${artigo.titulo}</h3>
         <p class="project-description">${artigo.resumo}</p>
         <p class="project-description"><strong>Autor:</strong> ${artigo.autor}</p>
-        <p class="project-description"><strong>Data:</strong> ${artigo.data}</p>
+        <p class="project-description"><strong>Publicado em:</strong> ${artigo.data}</p>
         <div class="project-links">
           <a href="${artigo.link}" target="_blank" class="project-link secondary">
             <i data-lucide="external-link"></i> Ler artigo completo
