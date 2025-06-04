@@ -62,15 +62,19 @@
 
 
     const artigos = [
+        {
+        titulo: "Bend: A linguagem brasileira que pensa diferente",
+        resumo: "Conheça a linguagem criada por Victor Taelin que desafia a lógica tradicional da programação.",
+        autor: "Erick de Lima Souza",
+        data: "19/02/2025 11:15",
+        link: "https://www.dio.me/articles/bend-a-revolucao-br-na-programacao-paralela-rapida-poderosa-e-feita-para-o-futuro"
+      },
   {
     titulo: "OpenAI: Muito Além do ChatGPT",
     resumo: "Um mergulho no ecossistema da OpenAI, passando por ChatGPT, Whisper, DALL·E, Codex e Sora.",
+    autor: "Erick de Lima Souza",
+    data: "16/02/2025 22:23",
     link: "https://www.dio.me/articles/openai-muito-alem-do-chatgpt"
-  },
-  {
-    titulo: "Bend: A linguagem brasileira que pensa diferente",
-    resumo: "Conheça a linguagem criada por Victor Taelin que desafia a lógica tradicional da programação.",
-    link: "https://www.dio.me/articles/bend-a-linguagem-brasileira-que-pensa-diferente"
   }
 ];
 
